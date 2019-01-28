@@ -12,5 +12,13 @@ pipeline {
 ./gradlew -i app:assembleDevDebug'''
       }
     }
+    stage('method') {
+      steps {
+        script {
+          dscdsc
+        }
+
+      }
+    }
   }
 }

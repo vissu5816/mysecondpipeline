@@ -14,10 +14,7 @@ pipeline {
     }
     stage('method') {
       steps {
-        script {
-          dscdsc
-        }
-
+        jobDsl(scriptText: 'jkvfdjkn')
       }
     }
   }

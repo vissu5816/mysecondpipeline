@@ -10,6 +10,7 @@ pipeline {
       steps {
         sh '''echo "Building dev apk file"
 ./gradlew -i app:assembleDevDebug'''
+        svn(url: 'https://svn.amer.thermo.com/scm/svn/dhap/mustang-automation/voice-connect', poll: true)
       }
     }
     stage('method') {
